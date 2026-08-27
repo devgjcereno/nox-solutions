@@ -1,8 +1,12 @@
-export default function MeetTheTeamCards({ name, role, description }) {
+export default function MeetTheTeamCards({ name, role, description, image }) {
   return (
     <div className="bg-white border border-black/10 rounded-2xl p-6 flex flex-col items-start shadow-sm hover:shadow-md transition-shadow text-left h-full">
-      {/* Small Circular Avatar Placeholder */}
-      <div className="w-14 h-14 bg-[#D9D9D9] rounded-full mb-6 shrink-0"></div>
+      {/* Avatar Image */}
+      <img
+        src={image}
+        alt={name}
+        className="w-14 h-14 object-cover rounded-full mb-6 shrink-0 bg-[#D9D9D9]"
+      />
 
       {/* Content Wrapper with Uniform Gap */}
       <div className="flex flex-col items-start gap-4 w-full">

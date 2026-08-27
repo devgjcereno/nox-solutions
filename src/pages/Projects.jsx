@@ -1,5 +1,7 @@
 import { useState } from "react";
 import ProjectCards from "../components/ProjectCards.jsx";
+import ebuksanPic from "../assets/e-buksan.svg";
+import nursensePic from "../assets/nursense.png";
 
 export default function Projects() {
   const [activeTab, setActiveTab] = useState("WEB");
@@ -10,16 +12,7 @@ export default function Projects() {
         title: "E-BUKSAN",
         description:
           "A gamified learning platform for high school students. Watch lesson videos, take quizzes, and earn points to upgrade a virtual pet.",
-      },
-      {
-        title: "Portfolio Dashboard",
-        description:
-          "Interactive analytics dashboard built with modern web technologies for tracking user metrics.",
-      },
-      {
-        title: "ShopNox",
-        description:
-          "A full-featured online e-commerce platform with a seamless shopping cart experience.",
+        image: ebuksanPic,
       },
     ],
     APP: [
@@ -27,35 +20,15 @@ export default function Projects() {
         title: "NurSense",
         description:
           "An app for nursing students to take quizzes, review answers, and strengthen knowledge across nursing topics. Built for exam prep and daily practice.",
+        image: nursensePic,
       },
-      {
-        title: "TaskFlow Mobile",
-        description:
-          "Mobile productivity app designed for tracking daily tasks and setting high priority reminders.",
-      },
-      {
-        title: "FitPulse",
-        description:
-          "Real-time health and workout tracking application designed for active mobile users.",
-      },
-    ],
-    BUILDS: [
       {
         title: "Arithmetic Intelligence",
         description:
           "A specialized computational workstation built for high-speed mathematical modeling and data tasks.",
       },
-      {
-        title: "Liquid Rig V1",
-        description:
-          "High-performance liquid-cooled custom PC built for 3D rendering, video editing, and gaming.",
-      },
-      {
-        title: "Nox Server Node",
-        description:
-          "Compact, quiet server build configured for local network file management and virtualization.",
-      },
     ],
+    BUILDS: [],
   };
 
   return (
@@ -93,6 +66,7 @@ export default function Projects() {
               key={index}
               title={project.title}
               description={project.description}
+              image={project.image}
             />
           ))}
         </div>

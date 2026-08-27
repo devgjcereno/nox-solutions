@@ -1,4 +1,6 @@
 import MeetTheTeamCards from "../components/MeetTheTeamCards";
+import keanPic from "../assets/kean.jpg";
+import glennPic from "../assets/glenn.jpg";
 
 export default function MeetTheTeam() {
   const teamMembers = [
@@ -6,11 +8,13 @@ export default function MeetTheTeam() {
       name: "Kean Joshua T.",
       role: "Front-End Developer",
       description: "Full-stack Developer focused on UI/UX.",
+      image: keanPic, // Pass the imported variable reference
     },
     {
       name: "Glenn C.",
       role: "Back-End Developer",
       description: "Full-stack Developer focused on Functionality.",
+      image: glennPic, // Pass the imported variable reference
     },
   ];
 
@@ -41,6 +45,7 @@ export default function MeetTheTeam() {
               name={member.name}
               role={member.role}
               description={member.description}
+              image={member.image}
             />
           ))}
         </div>

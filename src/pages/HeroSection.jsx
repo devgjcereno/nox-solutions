@@ -22,7 +22,7 @@ export default function HeroSection() {
         {/* Call to Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
           <a
-            href="#works"
+            href="#projects"
             className="w-full sm:w-auto bg-neutral-300 text-black px-8 py-3.5 rounded-full text-xs font-bold tracking-widest hover:bg-neutral-400 transition-all text-center"
           >
             VIEW OUR WORKS
